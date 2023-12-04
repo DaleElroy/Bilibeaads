@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Customize.Customize"
+    android:gravity="center"
+    android:id="@+id/customize_image"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/bilibeads_logo" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/iv_logo"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_cart"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignRight="@id/et_search"
+        android:layout_alignBottom="@+id/iv_logo"
+        android:layout_marginRight="-41dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/shoppingcarticon" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/iv_cart"
+        android:layout_alignBottom="@+id/iv_logo"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/profileicon" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/thread_of_beads"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/thread">
+
+        </ImageView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:columnCount="15"
+            android:rowCount="1"
+            android:layout_marginTop="170dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage4" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage5" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage6" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage7" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage8" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage9" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage10" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage11" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage12" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage13" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage14" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:id="@+id/viewImage15" />
+
+
+        </GridLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/card_view_color"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:cardCornerRadius="10dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_productList"
+                android:layout_width="380dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear_button"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/card_view"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            style="@style/Buttons"
+            android:background="@drawable/customizebutton"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Clear">
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reset_button"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/card_view"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/clear_button"
+            style="@style/Buttons"
+            android:background="@drawable/customizebutton"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Reset">
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/reset_button"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            style="@style/Buttons"
+            android:background="@drawable/customizebutton"
+            android:gravity="center"
+            android:text="confirm">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
